@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{8EFCCDA7-61AC-44E2-A862-EEF15F20FC46}|http">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.yamabiko1145 PreferredExecutionTarget="/Applications/Microsoft Edge.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="yamabiko1145/Pages/InputForm.cshtml">
+    <Files>
+      <File FileName="yamabiko1145/Pages/GridSystem.cshtml" />
+      <File FileName="yamabiko1145/Pages/Login.cshtml" />
+      <File FileName="yamabiko1145/Pages/Index.cshtml" />
+      <File FileName="yamabiko1145/Pages/Shared/_Layout.cshtml" />
+      <File FileName="yamabiko1145/Pages/InputForm.cshtml" Line="5" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="yamabiko1145" expanded="True">
+            <Node name="yamabiko1145" expanded="True">
+              <Node name="Pages" expanded="True">
+                <Node name="Shared" expanded="True" />
+                <Node name="InputForm.cshtml" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+</Properties>

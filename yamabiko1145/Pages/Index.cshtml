@@ -1,0 +1,102 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Controls";
+}
+
+<h4>@ViewData["Title"]</h4>
+<div>
+    <p>
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-dark">Dark</button>
+    </p>
+    <p>
+        <button type="button" class="btn btn-primary btn-rounded">Primary</button>
+        <button type="button" class="btn btn-secondary btn-rounded">Secondary</button>
+        <button type="button" class="btn btn-success btn-rounded">Success</button>
+        <button type="button" class="btn btn-danger btn-rounded">Danger</button>
+        <button type="button" class="btn btn-warning btn-rounded">Warning</button>
+        <button type="button" class="btn btn-info btn-rounded">Info</button>
+        <button type="button" class="btn btn-light btn-rounded">Light</button>
+        <button type="button" class="btn btn-dark btn-rounded">Dark</button>
+    </p>
+    <p>
+        <div class="btn-group" role="group">
+            <button type="button" class="btn btn-primary">左</button>
+            <button type="button" class="btn btn-primary">中央</button>
+            <button type="button" class="btn btn-primary">右</button>
+        </div>
+    </p>
+    <p>
+        <div class="btn-group" role="group">
+            <button type="button" class="btn btn-success">左</button>
+            <button type="button" class="btn btn-success">中央</button>
+            <button type="button" class="btn btn-success">右</button>
+        </div>
+    </p>
+    <p>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                ドロップダウン
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+        </div>
+    </p>
+    <p>
+        <div class="row">
+            <div class="card col-4">
+                <div class="card-body">
+                    <h5 class="card-title">カードタイトル</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <button type="button" class="btn btn-primary">ボタン</button>
+                </div>
+            </div>
+            <div class="col-8"></div>            
+        </div>
+    </p>
+    <p>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            ダイアログ
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">〇〇処理の実行</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        〇〇処理を実行しますか？
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                        <button type="button" class="btn btn-primary">実行</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </p>
+</div>
+<p>
+    <a href="https://getbootstrap.com/">Bootstap 5</a>
+</p>
+<p>
+    <a href="https://m3.material.io/">Material Design</a>
+</p>
+<p>
+    <a href="https://mdbootstrap.com/docs/standard/getting-started/installation/">Material Design for Bootstrap 5</a>
+</p>
+

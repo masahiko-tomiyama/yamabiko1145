@@ -1,0 +1,90 @@
+﻿@page
+@model yamabiko1145.Pages.InputFormModel
+@{
+}
+<h4>Input form & Validation</h4>
+<form class="row g-3 needs-validation" novalidate>
+    <div class="col-md-4">
+        <label for="validationCustom01" class="form-label">姓 col-4</label>
+        <input type="text" class="form-control" id="validationCustom01" value="" required>
+        <div class="invalid-feedback">
+            姓を入力して下さい
+        </div>
+    </div>
+    <div class="col-md-4">
+        <label for="validationCustom02" class="form-label">名 col-4</label>
+        <input type="text" class="form-control" id="validationCustom02" value="" required>
+        <div class="invalid-feedback">
+            名を入力して下さい
+        </div>
+    </div>
+    <div class="col-md-4">
+        <label for="validationCustomUsername" class="form-label">ユーザー名 col-4</label>
+        <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend">＠</span>
+            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+            <div class="invalid-feedback">
+                ユーザー名を入力して下さい
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <label for="validationCustom03" class="form-label">郵便番号  col-3</label>
+        <input type="text" class="form-control" id="validationCustom03" required>
+        <div class="invalid-feedback">
+            有効な郵便番号を入力して下さい
+        </div>
+    </div>
+    <div class="col-md-3">
+        <label for="validationCustom04" class="form-label">都道府県  col-3</label>
+        <select class="form-select" id="validationCustom04" required>
+            <option selected disabled value="">選択...</option>
+            <option>❶...</option>
+            <option>❷...</option>
+            <option>❸...</option>
+        </select>
+        <div class="invalid-feedback">
+            有効な都道府県を選択して下さい
+        </div>
+    </div>
+    <div class="col-md-6">
+        <label for="validationCustom5" class="form-label">住所  col-6</label>
+        <input type="text" class="form-control" id="validationCustom05" required>
+        <div class="invalid-feedback">
+            有効な住所を入力して下さい
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" value="" id="invalidCheck" required>
+            <label for="invalidCheck" class="form-check-label">
+                利用規約に同意する
+            </label>
+            <div class="invalid-feedback">
+                提出する前に同意する必要があります
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary">フォームを送信</button>
+    </div>
+</form>
+
+<script>
+    // 無効なフィールドがある場合にフォーム送信を無効にするスターターJavaScriptの例
+    (() => {
+        'use strict'
+        const forms = document.querySelectorAll('.needs-validation')
+        // ループして帰順を防ぐ
+        Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+            }, false)
+        })
+    })()
+</script>
